@@ -11,4 +11,4 @@ title: APCSP Notes
 # Important Commands to Know
 
 ## Helpful Navigation Commands in Powershell
-![]({{ site.baseurl }}/images/NavigationCommands "Navigation Commands")
+![]({{ site.baseurl }}/images/NavigationCommands.png "Navigation Commands")
