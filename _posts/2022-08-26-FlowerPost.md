@@ -9,10 +9,10 @@ author: Jiya
 categories: [fastpages, jupyter]
 
 msg = "Sunflowers"
-print (msg)
+print: (msg)
 ![]({{ site.baseurl }}/images/Sunflower.jpg)
 
 msg = "Hydrangeas"
-print (msg)
+print: (msg)
 ![]({{ site.baseurl }}/images/Hydrangeas.jpg)
 ---
