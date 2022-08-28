@@ -5,11 +5,11 @@ badges: true
 comments: true
 author: Jiya
 categories: [fastpages, jupyter]
-title: T Some Nice Flowers
+title: Some Nice Flowers
 ---
-# Checkout some flower y'all!
+# Checkout some flowers!
 
-## SunFlowers
+## Sunflowers
 ![]({{ site.baseurl }}/images/Sunflower.jpg "Sunflower pic")
 
 ## Hydrangeas
