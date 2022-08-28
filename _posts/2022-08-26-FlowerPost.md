@@ -1,6 +1,4 @@
 ---
-# Some Nice Flowers
-
 toc: true
 branch: master
 badges: true
@@ -9,10 +7,10 @@ author: Jiya
 categories: [fastpages, jupyter]
 title: T Some Nice Flowers
 ---
-msg = "Sunflowers"
-print (msg)
+# Checkout some flower y'all!
+
+## SunFlowers
 ![]({{ site.baseurl }}/images/Sunflower.jpg "Sunflower pic")
 
-msg = "Hydrangeas"
-print (msg)
-Image: /images/Hydrangeas.jpg
+## Hydrangeas
+![]({{ site.baseurl }}/images/Hydrangeas.jpg "Hydrangeas pic")
