@@ -6,6 +6,7 @@ comments: true
 author: Jiya
 categories: [fastpages, jupyter]
 title: Some Nice Flowers
+image: /image/flowervariety.jpg
 ---
 # Checkout some flowers!
 
