@@ -4,7 +4,7 @@ branch: master
 badges: true
 comments: true
 author: Jiya
-categories: [fastpages, jupyter]
+categories: [fastpages, jupyter, Week 1]
 title: Some Nice Flowers
 image: /image/flowervariety.jpg
 ---
