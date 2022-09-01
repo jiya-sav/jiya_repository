@@ -58,7 +58,7 @@
     
         ,"post5": {
             "title": "First Hello Blog Post",
-            "content": "msg = &quot;Hello Jiya&quot; print (msg) . Hello Jiya . Notes . - soufehnsonewf .",
+            "content": "msg = &quot;Hello Jiya&quot; print (msg) . Hello Jiya . Notes . I can take notes using a Jupyter kernel in a python kernel | .",
             "url": "https://jiya-sav.github.io/jiya_repository/fastpages/jupyter/week%200/2022/08/24/jiya_notebook.html",
             "relUrl": "/fastpages/jupyter/week%200/2022/08/24/jiya_notebook.html",
             "date": " • Aug 24, 2022"
