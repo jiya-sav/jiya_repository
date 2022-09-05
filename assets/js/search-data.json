@@ -151,10 +151,10 @@
 
   
       ,"page4": {
-          "title": "My Time Box",
+          "title": "My time box",
           "content": "Week Review Ticket and/or Blog Posts Learning Summary . 3 | . 2 | My fastpages | / During week 2, I made this time box, and customized my site more. I added link files to this page, and made sure there were plenty of images. Also, I made use of the tagging feature and learned about lists/ dictionaries in python. I made another quiz, and played around with the themes. | . 1 | My fastpages | / During week 1, I made a few example markdown and jupyter notebook posts to get an idea of how the blogging worked. I also created a quiz, learned how to make docx posts, and made a new page on my site to keep track of notes. | . 0 | My fastpages | / During week 0, I set up my repository and worked on exploring github/ fastpages. I joined the slack and also began learning how to set up posts. | .",
-          "url": "https://jiya-sav.github.io/jiya_repository/_pages/mytimebox.html",
-          "relUrl": "/_pages/mytimebox.html",
+          "url": "https://jiya-sav.github.io/jiya_repository/mytimebox",
+          "relUrl": "/mytimebox",
           "date": ""
       }
       
