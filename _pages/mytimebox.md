@@ -1,11 +1,7 @@
 ---
-toc: true
-branch: master
-badges: true
-comments: true
-author: Jiya
-categories: [fastpages, jupyter]
-title: My Time Box
+layout: page
+permalink: /mytimebox
+title: My time box
 ---
 
 <table>
