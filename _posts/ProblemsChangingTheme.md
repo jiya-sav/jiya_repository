@@ -3,7 +3,7 @@ toc: true
 branch: master
 badges: true
 comments: true
-categories: [fastpages, jupyter, Week 2]
+categories: [Week 2]
 title: Changing Theme
 image: /image/themeproblem.png
 ---
