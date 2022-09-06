@@ -431,9 +431,9 @@ pre code { font-size: 15px !important; }
 
 [class^="language-"]:not(.language-plaintext) pre, [class^="language-"]:not(.language-plaintext) code { background-color: #323443 !important; color: #f8f8f2; }
 
-.language-python + .language-plaintext code { background-color: white !important; }
+.language-python + .language-plaintext code { background-color: black !important; }
 
-.language-python + .language-plaintext pre { background-color: white !important; }
+.language-python + .language-plaintext pre { background-color: black !important; }
 
 .input_area pre, .input_area div { margin-bottom: 1.0rem !important; margin-top: 1.5rem !important; padding-bottom: 0 !important; padding-top: 0 !important; background: #323443 !important; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; font-family: Menlo, Monaco, Consolas, "Lucida Console", Roboto, Ubuntu, monospace; border-radius: 5px; font-size: 105%; }
 
@@ -484,7 +484,7 @@ p code { font-size: 19px; }
 
 html, body, input, textarea, select, button { color: rgba(255, 255, 255, 0.87) !important; background-color: #FFA63B !important; }
 
-a { color: #4bbaff !important; }
+a { color: #370657 !important; }
 
 a:hover { color: rgba(255, 255, 255, 0.87) !important; }
 
