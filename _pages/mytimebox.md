@@ -12,6 +12,8 @@ title: My time box
     </tr>
     <tr>
         <td>3</td>
+       <td><a href="https://jiya-sav.github.io/jiya_repository/">My fastpages</a></td>/
+        <td>This week, I played around with App Lab.</td>
     </tr>
     <tr>
        <td>2</td>
