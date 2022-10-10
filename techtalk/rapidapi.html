@@ -210,7 +210,7 @@ window.onload = wrap_img;
 
 <span class="c1"># Request Covid Data</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
-<span class="c1"># print(response.text)  # uncomment this line to see raw data</span>
+<span class="c1">#print(response.text)  # uncomment this line to see raw data</span>
 
 <span class="c1"># This code looks for "world data"</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"World Totals"</span><span class="p">)</span>
@@ -675,6 +675,82 @@ Rank Url: https://coinranking.com/coin/ixgUfzmLR+aave-aave
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Below is my own api program with Netflix top 10 movies</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://netflix-weekly-top-10.p.rapidapi.com/api/othermovie"</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">'x-rapidapi-key'</span><span class="p">:</span> <span class="s2">"cf94bdc878msh0d7a71de5a787e6p184ceejsnf6177235d280"</span><span class="p">,</span>
+    <span class="s1">'x-rapidapi-host'</span><span class="p">:</span> <span class="s2">"netflix-weekly-top-10.p.rapidapi.com"</span>
+<span class="p">}</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+
+<span class="c1"># This code looks for ATHENA in "movies_stats"</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Movie Totals"</span><span class="p">)</span>
+<span class="n">movies</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">movies</span><span class="p">:</span> <span class="c1">#.items():  # this finds key, value pairs in country</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">movie</span> <span class="ow">in</span> <span class="n">movies</span><span class="p">:</span>  <span class="c1"># movies is a list</span>
+    <span class="k">if</span> <span class="n">movie</span><span class="p">[</span><span class="s2">"movie_name"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"Plan A Plan B"</span><span class="p">:</span>  <span class="c1"># this filters for USA</span>
+        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">movie</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>  <span class="c1"># this finds key, value pairs in country</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[{"list":"1","name":"ATHENA","hoursviewed":"13,600,000"},{"list":"2","name":"The Perfumier","hoursviewed":"4,500,000"},{"list":"3","name":"Fullmetal Alchemist The Final Alchemy","hoursviewed":"4,460,000"},{"list":"4","name":"Plan A Plan B","hoursviewed":"3,920,000"},{"list":"5","name":"Aníkúlápó","hoursviewed":"2,680,000"},{"list":"6","name":"No Limit","hoursviewed":"2,220,000"},{"list":"7","name":"El Jeremías","hoursviewed":"2,210,000"},{"list":"8","name":"Loving Adults","hoursviewed":"2,160,000"},{"list":"9","name":"Drifting Home","hoursviewed":"1,720,000"},{"list":"10","name":"RRR (Hindi)","hoursviewed":"1,190,000"}]
+Movie Totals
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/jiya_sav/vscode/jiya_repository/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb Cell 12</span> in <span class="ansi-cyan-fg">&lt;cell line: 15&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jiya_sav/vscode/jiya_repository/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X13sdnNjb2RlLXJlbW90ZQ%3D%3D?line=12'&gt;13&lt;/a&gt;</span> print("Movie Totals")
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jiya_sav/vscode/jiya_repository/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X13sdnNjb2RlLXJlbW90ZQ%3D%3D?line=13'&gt;14&lt;/a&gt;</span> movies = response.json()
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jiya_sav/vscode/jiya_repository/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X13sdnNjb2RlLXJlbW90ZQ%3D%3D?line=14'&gt;15&lt;/a&gt;</span> for key, value in movies: #.items():  # this finds key, value pairs in country
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jiya_sav/vscode/jiya_repository/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X13sdnNjb2RlLXJlbW90ZQ%3D%3D?line=15'&gt;16&lt;/a&gt;</span>     print(key, value)
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jiya_sav/vscode/jiya_repository/_notebooks/2022-10-03-PBL-python_rapidapi.ipynb#X13sdnNjb2RlLXJlbW90ZQ%3D%3D?line=16'&gt;17&lt;/a&gt;</span> for movie in movies:  # movies is a list
+
+<span class="ansi-red-fg">ValueError</span>: too many values to unpack (expected 2)</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
