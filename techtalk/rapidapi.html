@@ -760,11 +760,11 @@ Movie Totals
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">requests</span>
 
-<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://pizza-and-desserts.p.rapidapi.com/desserts"</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">"https://joke-generator.p.rapidapi.com/generate-joke"</span>
 
 <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
 	<span class="s2">"X-RapidAPI-Key"</span><span class="p">:</span> <span class="s2">"cf94bdc878msh0d7a71de5a787e6p184ceejsnf6177235d280"</span><span class="p">,</span>
-	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"pizza-and-desserts.p.rapidapi.com"</span>
+	<span class="s2">"X-RapidAPI-Host"</span><span class="p">:</span> <span class="s2">"joke-generator.p.rapidapi.com"</span>
 <span class="p">}</span>
 
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="s2">"GET"</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
@@ -782,7 +782,7 @@ Movie Totals
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[{"id":1,"name":"Choco Sundae","price":29,"description":"Choco Sundae Cup (100 ml)","img":"https://api.pizzahut.io/v1/content/en-in/in-1/images/dessert/choco-sundae.e0d29fd156012e251c099c2771219d18.1.jpg?width=800","quantity":1},{"id":2,"name":"Cornetto Double Chocolate","price":38,"description":"Cornetto Double Chocolate Cone (105 ml)","img":"https://api.pizzahut.io/v1/content/en-in/in-1/images/dessert/cornetto-double-chocolate.acc21849ac732f2f85998ad73e532d40.1.jpg?width=522","quantity":1},{"id":3,"name":"Magnum Truffle","price":76,"description":"Magnum Truffle (80 ml)","img":"https://api.pizzahut.io/v1/content/en-in/in-1/images/dessert/magnum-truffle.e300005ba1d8c15aafe824c1fa3b41ea.1.jpg?width=522","quantity":1},{"id":4,"name":"Divine Chocolate(Tub)","price":209,"description":"Divine Chocolate (700 ml)","img":"https://api.pizzahut.io/v1/content/en-in/in-1/images/dessert/divine-chocolate-tub.1df6b11e6e5d510cd11ae0d6e475686d.1.jpg?width=522","quantity":1},{"id":5,"name":"Choco Volcano Cake","price":99,"description":"Choco Delight With A Gooey Chocolate Volcano Centre","img":"https://api.pizzahut.io/v1/content/en-in/in-1/images/dessert/choco-volcano-cake.dd9f24941b09268c73c073494d54480d.1.jpg?width=522","quantity":1}]
+<pre>{"title":"Cats Are Smarter","content":"\n\t\t\t\t\t\t\tCats are smarter than dogs. You can't get eight cats to pull a sled through snow.\n\n—Jeff Valdez\t\t\t\t\t\t","category":"dog"}
 </pre>
 </div>
 </div>
