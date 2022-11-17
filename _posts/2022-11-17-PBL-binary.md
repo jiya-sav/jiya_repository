@@ -1,4 +1,6 @@
 ---
+toc: true
+layout: post
 title: Binary 
 description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
 image: /images/binary.png
