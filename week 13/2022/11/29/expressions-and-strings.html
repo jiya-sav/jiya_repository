@@ -4,9 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Big idea 3! | Jiya’s Fastpages</title>
+<title>Unit 3 Sections 3-4 Classwork | Jiya’s Fastpages</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Big idea 3!" />
+<meta property="og:title" content="Unit 3 Sections 3-4 Classwork" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Lesson on Big Idea 3 which includes expressions, strings, psuedocode, and more!" />
 <meta property="og:description" content="Lesson on Big Idea 3 which includes expressions, strings, psuedocode, and more!" />
@@ -16,9 +16,9 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-11-29T00:00:00-06:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Big idea 3!" />
+<meta property="twitter:title" content="Unit 3 Sections 3-4 Classwork" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-11-29T00:00:00-06:00","datePublished":"2022-11-29T00:00:00-06:00","description":"Lesson on Big Idea 3 which includes expressions, strings, psuedocode, and more!","headline":"Big idea 3!","mainEntityOfPage":{"@type":"WebPage","@id":"https://jiya-sav.github.io/jiya_repository/week%2013/2022/11/29/expressions-and-strings.html"},"url":"https://jiya-sav.github.io/jiya_repository/week%2013/2022/11/29/expressions-and-strings.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-11-29T00:00:00-06:00","datePublished":"2022-11-29T00:00:00-06:00","description":"Lesson on Big Idea 3 which includes expressions, strings, psuedocode, and more!","headline":"Unit 3 Sections 3-4 Classwork","mainEntityOfPage":{"@type":"WebPage","@id":"https://jiya-sav.github.io/jiya_repository/week%2013/2022/11/29/expressions-and-strings.html"},"url":"https://jiya-sav.github.io/jiya_repository/week%2013/2022/11/29/expressions-and-strings.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/jiya_repository/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jiya-sav.github.io/jiya_repository/feed.xml" title="Jiya's Fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/jiya_repository/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -73,7 +73,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Big idea 3!</h1><p class="page-description">Lesson on Big Idea 3 which includes expressions, strings, psuedocode, and more!</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-11-29T00:00:00-06:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Unit 3 Sections 3-4 Classwork</h1><p class="page-description">Lesson on Big Idea 3 which includes expressions, strings, psuedocode, and more!</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-11-29T00:00:00-06:00" itemprop="datePublished">
         Nov 29, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -286,7 +286,15 @@ Hint: use the MOD operator (a % b) to find the remainder when a is divided by b.
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">convert</span><span class="p">():</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">convert</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">binary</span> <span class="o">=</span> <span class="s2">""</span>
+    <span class="k">while</span> <span class="nb">int</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">binary</span><span class="o">+=</span><span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">n</span><span class="o">%</span><span class="k">2</span>))
+        <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">binary</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># how to revese string</span>
+        
+<span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Enter a number 1-255'</span><span class="p">))</span>
+<span class="n">convert</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -298,12 +306,8 @@ Hint: use the MOD operator (a % b) to find the remainder when a is divided by b.
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-cyan-fg">  Input </span><span class="ansi-green-fg">In [14]</span>
-<span class="ansi-red-fg">    def convert():</span>
-                  ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> unexpected EOF while parsing
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1000
 </pre>
 </div>
 </div>
@@ -330,9 +334,9 @@ Hint: use the MOD operator (a % b) to find the remainder when a is divided by b.
 <a class="anchor" href="#Vocab:-fill-in-the-blanks-using-the-video" aria-hidden="true"><span class="octicon octicon-link"></span></a>Vocab: fill in the blanks using the video<a class="anchor-link" href="#Vocab:-fill-in-the-blanks-using-the-video"> </a>
 </h3>
 <p>Index is a number representing a position, like a character's position in a string or a string's position in a list.<br>
-Concatenation is <strong>__</strong><br>
-Length is <strong><strong><br>
-A substring is ___</strong></strong></p>
+Concatenation is <strong>__</strong>  : combing two strings
+Length is <strong><strong> : how many characters are in a string 
+A substring is ___</strong></strong>  : part of a string</p>
 
 </div>
 </div>
