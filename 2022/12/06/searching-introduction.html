@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      8 min read
     
 </span></p>
 
@@ -706,7 +706,24 @@ Execution time: 0.06628036499023438 ms
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">sqrt</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
-    <span class="c1"># Write your code here</span>
+    <span class="c1"># Write your code here (didn't work, so I commented it)</span>
+    <span class="c1"># minimum = 0</span>
+    <span class="c1"># maximum = N</span>
+   <span class="c1"># while minimum &lt; maximum:</span>
+       <span class="c1"># center = (minimum + maximum) / 2 # the middle value </span>
+       <span class="c1"># if center**2 == N:</span>
+        <span class="c1">#    print(center) # checking if center is sqrt</span>
+       <span class="c1"># else:</span>
+        <span class="c1">#    minimum += 1 # advancing loop until a value is the sqrt</span>
+
+
+
+
+    <span class="c1"># I tried to use the max/ min idea, but it didn't really work out and gave an error message, so I am using powers</span>
+    <span class="n">N</span><span class="o">**</span><span class="mf">0.5</span>
+
+
+    
     <span class="k">return</span> <span class="kc">None</span>
 </pre></div>
 
@@ -793,6 +810,32 @@ Check number 13 failed
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Check number 1 failed
+Check number 2 failed
+Check number 3 failed
+Check number 4 failed
+Check number 5 failed
+Check number 6 failed
+Check number 7 failed
+Check number 8 failed
+Check number 9 failed
+Check number 10 failed
+Check number 11 failed
+Check number 12 failed
+Check number 13 failed
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
