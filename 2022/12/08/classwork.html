@@ -348,9 +348,22 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">charToBinary</span><span class="p">(</span><span class="n">x</span><span class="p">):()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># first convert dec to binary</span>
+<span class="k">def</span> <span class="nf">convert</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="n">binary</span> <span class="o">=</span> <span class="s2">""</span>
+    <span class="k">while</span> <span class="nb">int</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">binary</span><span class="o">+=</span><span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">n</span><span class="o">%</span><span class="k">2</span>))
+        <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">/</span> <span class="mi">2</span>
+    <span class="k">return</span><span class="p">(</span><span class="n">binary</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># how to revese string</span>
+    
+<span class="c1"># next input string</span>
+<span class="n">letters</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s1">'Enter a word in all CAPS'</span><span class="p">))</span>
 
-<span class="c1"># The output shown below is the output you are supposed to get</span>
+<span class="c1"># ord makes letters into int</span>
+<span class="c1"># now convert each letter</span>
+<span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">letters</span><span class="p">:</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">convert</span><span class="p">(</span><span class="nb">ord</span><span class="p">(</span><span class="n">p</span><span class="p">))</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="n">p</span> <span class="o">+</span> <span class="s2">": "</span> <span class="o">+</span> <span class="n">c</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -363,8 +376,11 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>''APCSP'' in binary is 
-[1000001, 1010000, 1000011, 1010011, 1010000]
+<pre>A: 1000001
+P: 1010000
+C: 1000011
+S: 1010011
+P: 1010000
 </pre>
 </div>
 </div>
