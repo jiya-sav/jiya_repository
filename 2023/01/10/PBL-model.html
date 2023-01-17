@@ -13,14 +13,12 @@
 <link rel="canonical" href="https://jiya-sav.github.io/jiya_repository/2023/01/10/PBL-model.html" />
 <meta property="og:url" content="https://jiya-sav.github.io/jiya_repository/2023/01/10/PBL-model.html" />
 <meta property="og:site_name" content="Jiya’s Fastpages" />
-<meta property="og:image" content="https://jiya-sav.github.io/jiya_repository/images/python.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-01-10T00:00:00-06:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://jiya-sav.github.io/jiya_repository/images/python.png" />
+<meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Model and Object-Oriented Programming" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-01-10T00:00:00-06:00","datePublished":"2023-01-10T00:00:00-06:00","description":"Object Oriented Programming is a part of learning Python. The objective of this blog is to introduce OOP with the intention of PBL task to create a database. The foundations for a database is defining a Class and understanding instance data and methods. A database is often a focus of backend coding as it will store persistent data, that can be recalled after the immediate session is closed.","headline":"Model and Object-Oriented Programming","image":"https://jiya-sav.github.io/jiya_repository/images/python.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://jiya-sav.github.io/jiya_repository/2023/01/10/PBL-model.html"},"url":"https://jiya-sav.github.io/jiya_repository/2023/01/10/PBL-model.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-01-10T00:00:00-06:00","datePublished":"2023-01-10T00:00:00-06:00","description":"Object Oriented Programming is a part of learning Python. The objective of this blog is to introduce OOP with the intention of PBL task to create a database. The foundations for a database is defining a Class and understanding instance data and methods. A database is often a focus of backend coding as it will store persistent data, that can be recalled after the immediate session is closed.","headline":"Model and Object-Oriented Programming","mainEntityOfPage":{"@type":"WebPage","@id":"https://jiya-sav.github.io/jiya_repository/2023/01/10/PBL-model.html"},"url":"https://jiya-sav.github.io/jiya_repository/2023/01/10/PBL-model.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/jiya_repository/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jiya-sav.github.io/jiya_repository/feed.xml" title="Jiya's Fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/jiya_repository/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -81,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      8 min read
     
 </span></p>
 
@@ -311,24 +309,21 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Test 1, find user 3
-name: "Thomas Edison", id: "toby", psw: "sha256$nTQ..."
-name: "Nicholas Tesla", id: "nick", psw: "sha256$JPM..."
-* name: "Alexander Graham Bell", id: "lex", psw: "sha256$iHV..."
-name: "Eli Whitney", id: "eli", psw: "sha256$US0..."
-name: "Hedy Lemarr", id: "hedy", psw: "sha256$2cC..."
-Test 2, change user 3
-name: "Thomas Edison", id: "toby", psw: "sha256$nTQ..."
-name: "Nicholas Tesla", id: "nick", psw: "sha256$JPM..."
-* name: "John Mortensen", id: "jm1021", psw: "sha256$2I7..."
-name: "Eli Whitney", id: "eli", psw: "sha256$US0..."
-name: "Hedy Lemarr", id: "hedy", psw: "sha256$2cC..."
-Test 3, make a dictionary
-[{"_name": "Thomas Edison", "_uid": "toby", "_password": "sha256$nTQxZ9alViZd3WOn$34c90a641520c96e3d91ac148340b8b07d3c0958249dfcfe4a3eb05e2621efef"}, {"_name": "Nicholas Tesla", "_uid": "nick", "_password": "sha256$JPMovUtCRid1pCTE$089368f59621e8878ea730e5328bd9fc442f1d63f40d99f52502c059f9921281"}, {"_name": "John Mortensen", "_uid": "jm1021", "_password": "sha256$2I7yhf1jQOPNu2YE$473f9f24b42cbbd52d6fd4effe03b73ba41ff31ea5532940480aadef56b3ce2d"}, {"_name": "Eli Whitney", "_uid": "eli", "_password": "sha256$US0fsfAaoQix8ido$5b6bac49c74a9fe08b18147a8d0f5c41d7805c42238a9d29dc2e8dbafff8324f"}, {"_name": "Hedy Lemarr", "_uid": "hedy", "_password": "sha256$2cC6Hp5Z4WcmxpBK$df9ed2dbe43edee11d7dc5101057274b2c47be5db95d6610ab7e4fba2dbf6d17"}]
-Test 4, make a dictionary
-[{"_name": "Thomas Edison", "_uid": "toby", "_password": "sha256$nTQxZ9alViZd3WOn$34c90a641520c96e3d91ac148340b8b07d3c0958249dfcfe4a3eb05e2621efef"}, {"_name": "Nicholas Tesla", "_uid": "nick", "_password": "sha256$JPMovUtCRid1pCTE$089368f59621e8878ea730e5328bd9fc442f1d63f40d99f52502c059f9921281"}, {"_name": "John Mortensen", "_uid": "jm1021", "_password": "sha256$2I7yhf1jQOPNu2YE$473f9f24b42cbbd52d6fd4effe03b73ba41ff31ea5532940480aadef56b3ce2d"}, {"_name": "Eli Whitney", "_uid": "eli", "_password": "sha256$US0fsfAaoQix8ido$5b6bac49c74a9fe08b18147a8d0f5c41d7805c42238a9d29dc2e8dbafff8324f"}, {"_name": "Hedy Lemarr", "_uid": "hedy", "_password": "sha256$2cC6Hp5Z4WcmxpBK$df9ed2dbe43edee11d7dc5101057274b2c47be5db95d6610ab7e4fba2dbf6d17"}]
-</pre>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ModuleNotFoundError</span>                       Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/jiya_sav/vscode/jiya_repository/_notebooks/2023-01-10-PBL-model.ipynb Cell 4</span> in <span class="ansi-cyan-fg">&lt;cell line: 5&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jiya_sav/vscode/jiya_repository/_notebooks/2023-01-10-PBL-model.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> #
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jiya_sav/vscode/jiya_repository/_notebooks/2023-01-10-PBL-model.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=1'&gt;2&lt;/a&gt;</span> # Werkzeug is a collection of libraries that can be used to create a WSGI (Web Server Gateway Interface)
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jiya_sav/vscode/jiya_repository/_notebooks/2023-01-10-PBL-model.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span> # A gateway in necessary as a web server cannot communicate directly with Python.
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jiya_sav/vscode/jiya_repository/_notebooks/2023-01-10-PBL-model.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span> # In this case, imports are focused on generating hash code to protect passwords.
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jiya_sav/vscode/jiya_repository/_notebooks/2023-01-10-PBL-model.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span> from werkzeug.security import generate_password_hash, check_password_hash
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jiya_sav/vscode/jiya_repository/_notebooks/2023-01-10-PBL-model.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span> import json
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jiya_sav/vscode/jiya_repository/_notebooks/2023-01-10-PBL-model.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span> # Define a User Class/Template
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/jiya_sav/vscode/jiya_repository/_notebooks/2023-01-10-PBL-model.ipynb#W3sdnNjb2RlLXJlbW90ZQ%3D%3D?line=8'&gt;9&lt;/a&gt;</span> # -- A User represents the data we want to manage
+
+<span class="ansi-red-fg">ModuleNotFoundError</span>: No module named 'werkzeug'</pre>
 </div>
 </div>
 
@@ -402,6 +397,169 @@ Test 4, make a dictionary
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>18
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">from</span> <span class="nn">werkzeug.security</span> <span class="kn">import</span> <span class="n">generate_password_hash</span><span class="p">,</span> <span class="n">check_password_hash</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">date</span>
+
+<span class="k">class</span> <span class="nc">User</span><span class="p">:</span>    
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">uid</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">dob</span><span class="p">,</span> <span class="n">city</span><span class="p">):</span> <span class="c1"># classOf commenting out so it can be defined outside init</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>    <span class="c1"># variables with self prefix become part of the object, </span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_uid</span> <span class="o">=</span> <span class="n">uid</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">set_password</span><span class="p">(</span><span class="n">password</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dob</span> <span class="o">=</span> <span class="n">dob</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_classOf</span> <span class="o">=</span> <span class="nb">str</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_dob</span><span class="o">.</span><span class="n">year</span> <span class="o">+</span> <span class="mi">18</span><span class="p">)</span> <span class="c1"># classOf # specifying attribute of this class</span>
+         <span class="c1"># classOf value is set to +18 yrs from birthdate as a default</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_city</span> <span class="o">=</span> <span class="n">city</span> <span class="c1"># relevent to project about plane tickets</span>
+
+    <span class="nd">@property</span> <span class="c1"># getter</span>
+    <span class="k">def</span> <span class="nf">classOf</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_classOf</span>
+
+    <span class="nd">@property</span> <span class="c1"># extra getter for destination</span>
+    <span class="k">def</span> <span class="nf">classOf</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_city</span>
+
+    <span class="c1"># a setter function, allows classOf to be updated after initial object creation</span>
+    <span class="nd">@classOf</span><span class="o">.</span><span class="n">setter</span> <span class="c1"># declares a setter function</span>
+    <span class="k">def</span> <span class="nf">classOf</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">classOf</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_classOf</span> <span class="o">=</span> <span class="n">classOf</span>
+
+
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name</span>
+    
+    <span class="c1"># a setter function, allows name to be updated after initial object creation</span>
+    <span class="nd">@name</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+    
+    <span class="c1"># a getter method, extracts email from object</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">uid</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_uid</span>
+    
+    <span class="c1"># a setter function, allows name to be updated after initial object creation</span>
+    <span class="nd">@uid</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">uid</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">uid</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_uid</span> <span class="o">=</span> <span class="n">uid</span>
+        
+    <span class="c1"># check if uid parameter matches user id in object, return boolean</span>
+    <span class="k">def</span> <span class="nf">is_uid</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">uid</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_uid</span> <span class="o">==</span> <span class="n">uid</span>
+    
+    <span class="c1"># dob property is returned as string, to avoid unfriendly outcomes</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">dob</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">dob_string</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dob</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">'%m-</span><span class="si">%d</span><span class="s1">-%Y'</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">dob_string</span>
+    
+    <span class="c1"># dob should be have verification for type date</span>
+    <span class="nd">@dob</span><span class="o">.</span><span class="n">setter</span>
+    <span class="k">def</span> <span class="nf">dob</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">dob</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_dob</span> <span class="o">=</span> <span class="n">dob</span>
+        
+    <span class="c1"># age is calculated and returned each time it is accessed</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">age</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">today</span> <span class="o">=</span> <span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">today</span><span class="o">.</span><span class="n">year</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dob</span><span class="o">.</span><span class="n">year</span> <span class="o">-</span> <span class="p">((</span><span class="n">today</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="n">today</span><span class="o">.</span><span class="n">day</span><span class="p">)</span> <span class="o">&lt;</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_dob</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_dob</span><span class="o">.</span><span class="n">day</span><span class="p">))</span>
+    
+    <span class="c1"># dictionary is customized, removing password for security purposes</span>
+    <span class="nd">@property</span>
+    <span class="k">def</span> <span class="nf">dictionary</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="s2">"name"</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+            <span class="s2">"uid"</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">uid</span><span class="p">,</span>
+            <span class="s2">"dob"</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">dob</span><span class="p">,</span>
+            <span class="s2">"age"</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">age</span><span class="p">,</span>
+            <span class="s2">"classOf"</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">classOf</span><span class="p">,</span> <span class="c1"># adding classOf</span>
+            <span class="s2">"city"</span> <span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">_city</span> <span class="c1"># adding city</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="nb">dict</span>
+    
+    <span class="c1"># update password, this is conventional setter</span>
+    <span class="k">def</span> <span class="nf">set_password</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">password</span><span class="p">):</span>
+        <span class="sd">"""Create a hashed password."""</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_password</span> <span class="o">=</span> <span class="n">generate_password_hash</span><span class="p">(</span><span class="n">password</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">'sha256'</span><span class="p">)</span>
+
+    <span class="c1"># check password parameter versus stored/encrypted password</span>
+    <span class="k">def</span> <span class="nf">is_password</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">password</span><span class="p">):</span>
+        <span class="sd">"""Check against hashed password."""</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">check_password_hash</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_password</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">result</span>
+    
+    <span class="c1"># output content using json dumps, this is ready for API response</span>
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">dictionary</span><span class="p">)</span>
+    
+    <span class="c1"># output command to recreate the object, uses attribute directly</span>
+    <span class="k">def</span> <span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">'User(name=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_name</span><span class="si">}</span><span class="s1">, uid=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_uid</span><span class="si">}</span><span class="s1">, password=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_password</span><span class="si">}</span><span class="s1">,dob=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_dob</span><span class="si">}</span><span class="s1">, classOf=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_classOf</span><span class="si">}</span><span class="s1">, city=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_city</span><span class="si">}</span><span class="s1">)'</span>
+    <span class="c1"># added classOf and city</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">"__main__"</span><span class="p">:</span>
+    <span class="n">u1</span> <span class="o">=</span> <span class="n">User</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'Thomas Edison'</span><span class="p">,</span> <span class="n">uid</span><span class="o">=</span><span class="s1">'toby'</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="s1">'123toby'</span><span class="p">,</span> <span class="n">dob</span><span class="o">=</span><span class="n">date</span><span class="p">(</span><span class="mi">1847</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">11</span><span class="p">),</span> <span class="n">city</span><span class="o">=</span><span class="s1">'San Diego'</span> <span class="p">)</span><span class="c1"># commented this out so I can define classOf outside this innit function: classOf='1866'</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"JSON ready string:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">u1</span><span class="p">,</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Raw Variables of object:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="nb">vars</span><span class="p">(</span><span class="n">u1</span><span class="p">),</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span> 
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Raw Attributes and Methods of object:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="nb">dir</span><span class="p">(</span><span class="n">u1</span><span class="p">),</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Representation to Re-Create the object:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="nb">repr</span><span class="p">(</span><span class="n">u1</span><span class="p">),</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>JSON ready string:
+ {"name": "Thomas Edison", "uid": "toby", "dob": "02-11-1847", "age": 175, "classOf": "San Diego", "city": "San Diego"} 
+
+Raw Variables of object:
+ {'_name': 'Thomas Edison', '_uid': 'toby', '_password': 'sha256$GeeS0bKJJO0LHw3g$f7f0ce19286945a22d6cf055b355dbd744ca65226f896eedba04b81277662142', '_dob': datetime.date(1847, 2, 11), '_classOf': '1865', '_city': 'San Diego'} 
+
+Raw Attributes and Methods of object:
+ ['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_city', '_classOf', '_dob', '_name', '_password', '_uid', 'age', 'classOf', 'dictionary', 'dob', 'is_password', 'is_uid', 'name', 'set_password', 'uid'] 
+
+Representation to Re-Create the object:
+ User(name=Thomas Edison, uid=toby, password=sha256$GeeS0bKJJO0LHw3g$f7f0ce19286945a22d6cf055b355dbd744ca65226f896eedba04b81277662142,dob=1847-02-11, classOf=1865, city=San Diego) 
+
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
