@@ -5,11 +5,6 @@ title: FRESH Meal Plan Planning
 categories: [week 20]
 ---
 
-## Sample 
-| Column 1 | Column 2 |
-|-|-|
-| A thing | Another thing |
-
 <!-- below is the code for the html calorie dropdown -->
 <html>
 <head>
