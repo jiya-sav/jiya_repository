@@ -196,8 +196,7 @@ body {font-family: Verdana, sans-serif;}
 </head>
 <body>
 
-<h1>CSS Calendar</h1>
-
+<h1>Sample Calander</h1>
 <div class="month">      
   <ul>
     <li class="prev">&#10094;</li>
