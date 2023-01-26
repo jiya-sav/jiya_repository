@@ -10,6 +10,7 @@ categories: [week 20]
 |-|-|
 | A thing | Another thing |
 
+<!-- below is the code for the html calorie dropdown -->
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -63,6 +64,49 @@ categories: [week 20]
     <a href="#">2000-3000</a>
     <a href="#">over 3000</a>
   </div>
+
+</body>
+</html>
+
+<!-- below is the code for selecting how many meals -->
+<html>
+<body>
+
+<h1>The select multiple attribute</h1>
+
+<p>You may select multiple meals</p>
+
+<form action="/action_page.php">
+  <label for="mealtype">Choose which meals you want to include in meal prep:</label>
+  <br><br>
+  <select name="mealtype" id="mealtype" multiple>
+    <option value="breakfast">breakfast</option>
+    <option value="lunch">lunch</option>
+    <option value="dinner">dinner</option>
+    <option value="dessert">dessert</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>Hold down the Ctrl (windows) or Command (Mac) button to select multiple options.</p>
+
+</body>
+</html>
+
+<!-- below is the code for snacks and servings input, and submit -->
+<html>
+<body>
+
+<form action="/action_page.php">
+  <label for="snacknum">How many snacks would you like to include?</label>
+  <input type="text" id="snacknum" name="snacknum"><br><br>
+  <label for="servings">How many people are included in your meal plan?</label>
+  <input type="text" id="servings" name="servings"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>Click the "Submit" button once finished</p>
 
 </body>
 </html>
