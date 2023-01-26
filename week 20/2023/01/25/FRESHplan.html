@@ -98,6 +98,7 @@ window.onload = wrap_img;
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h2"><a href="#sample">Sample</a></li>
 <li class="toc-entry toc-h2"><a href="#daily-specifications">Daily Specifications</a></li>
+<li class="toc-entry toc-h1"><a href="#the-select-multiple-attribute">The select multiple attribute</a></li>
 </ul><body>
 <h2 id="sample">
 <a class="anchor" href="#sample" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sample</h2>
@@ -105,6 +106,7 @@ window.onload = wrap_img;
 |-|-|
 | A thing | Another thing |</p>
 
+<!-- below is the code for the html calorie dropdown -->
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -162,6 +164,50 @@ window.onload = wrap_img;
 
 &lt;/body&gt;
 &lt;/html&gt;
+
+<!-- below is the code for selecting how many meals -->
+
+
+
+<h1>
+<a class="anchor" href="#the-select-multiple-attribute" aria-hidden="true"><span class="octicon octicon-link"></span></a>The select multiple attribute</h1>
+
+<p>You may select multiple meals</p>
+
+<form action="/action_page.php">
+  <label for="mealtype">Choose which meals you want to include in meal prep:</label>
+  <br><br>
+  <select name="mealtype" id="mealtype" multiple>
+    <option value="breakfast">breakfast</option>
+    <option value="lunch">lunch</option>
+    <option value="dinner">dinner</option>
+    <option value="dessert">dessert</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>Hold down the Ctrl (windows) or Command (Mac) button to select multiple options.</p>
+
+
+
+
+<!-- below is the code for snacks and servings input, and submit -->
+
+
+
+<form action="/action_page.php">
+  <label for="snacknum">How many snacks would you like to include?</label>
+  <input type="text" id="snacknum" name="snacknum"><br><br>
+  <label for="servings">How many people are included in your meal plan?</label>
+  <input type="text" id="servings" name="servings"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>Click the "Submit" button once finished</p>
+
+
+
 </div>
 </body>
   </div><a class="u-url" href="/jiya_repository/week%2020/2023/01/25/FRESHplan.html" hidden></a>
