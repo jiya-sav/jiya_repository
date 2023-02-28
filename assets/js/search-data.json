@@ -101,10 +101,10 @@
   
     
         ,"post9": {
-            "title": "Issues Blog",
-            "content": "My first issue: . . Other Error: . . What help said (not under my control): . To fix the operational error, I tried many methods. I tried to follow the instructions on slack: . Fix #1: fixing SQLAlchemy upgrade that changed syntax on how to perform db.create_all(); must be inside an with app.app_context(): . | Fix #2: default location for databases inside an instance folder; changing the impacted docker-compose.yml . | . Also, I tried removing the db.init_app(app) lines in each of our api files. . Finally, I got it to work after recoding the entire api files for recipe.py, recipes.py, and main.py. The flask was running smoothly, and I was even able to connect it to postman: . . Unfortunately, now the flask is not able to run, so I can’t connect it to my front end. However, it is an easy fix to fetch the api, and I even included a section for it in my current code: . . My current error: . .",
-            "url": "https://jiya-sav.github.io/jiya_repository/2023/02/27/Issues-Blog.html",
-            "relUrl": "/2023/02/27/Issues-Blog.html",
+            "title": "Natm Blog Tri 2",
+            "content": "We presented our project to people at NATM: . . Many people came up to our laptop display and inquired about our project. Some included parents, who saw a practical use to our recipe organizer and appreciated the usefulness of an ingredient nutritional value checker, meal planner, and recipe finder. . . We observed other groups’ projects, including the ones pictured above related to cars. This group included a cars search feature, which I thought was similar to the recipe search feature I used. I think our backends were aiming to accomplish the same task, which was to take user inputs/ specifications, and output something that met those requirements. . . . I also watched the jazz performers, who played beautifully, and other fine arts displays. These were a reminder that even though computer technology is very useful and helpful for tasks, authentic artwork is unique to the human experience and can’t be perfectly replicated. .",
+            "url": "https://jiya-sav.github.io/jiya_repository/2023/02/27/NATM-Blog-Tri-2.html",
+            "relUrl": "/2023/02/27/NATM-Blog-Tri-2.html",
             "date": " • Feb 27, 2023"
         }
         
@@ -112,10 +112,10 @@
   
     
         ,"post10": {
-            "title": "Final Peer Review Grade",
-            "content": "  P1 Sophia P2 Haoxuan Self . Project Quality | 1 | 1 | 1 | . Input | 1 | 1 | 1 | . Create, Read, | 1 | 1 | 1 | . Update, delete | 0 | 0 | 0 | . Individual code quality, review and observe comments | 1 | 1 | 1 | . BE review, observe if Individual API handles error conditions | 0 | 0 | 1; no conformation page is shown if a blank submission is attempted | . BE review, observe if Individual API contains GET and POST methods | 1 | 1 | 1 | . BE review, observe that Individual code contains database operations that support Create, Read | 1 | 1 | 1 | . BE review, observe that Individual code contains database operations that support Update, Delete (above requirement) | 0 | 0 | 0 | . Evidence of Requirements . Link to video demonstration of project: https://www.loom.com/share/ff02b8538267459f9a4dfc420c69c04a . Input: . . . Create + Read (see video for demonstration) . Error Correction + Testing (many alerts) . . Operations in Fastpages code that support Create + Read . . .",
-            "url": "https://jiya-sav.github.io/jiya_repository/2023/02/27/Final-Peer-Review-Grade.html",
-            "relUrl": "/2023/02/27/Final-Peer-Review-Grade.html",
+            "title": "Issues Blog",
+            "content": "My first issue: . . Other Error: . . What help said (not under my control): . To fix the operational error, I tried many methods. I tried to follow the instructions on slack: . Fix #1: fixing SQLAlchemy upgrade that changed syntax on how to perform db.create_all(); must be inside an with app.app_context(): . | Fix #2: default location for databases inside an instance folder; changing the impacted docker-compose.yml . | . Also, I tried removing the db.init_app(app) lines in each of our api files. . Finally, I got it to work after recoding the entire api files for recipe.py, recipes.py, and main.py. The flask was running smoothly, and I was even able to connect it to postman: . . Unfortunately, now the flask is not able to run, so I can’t connect it to my front end. However, it is an easy fix to fetch the api, and I even included a section for it in my current code: . . My current error: . .",
+            "url": "https://jiya-sav.github.io/jiya_repository/2023/02/27/Issues-Blog.html",
+            "relUrl": "/2023/02/27/Issues-Blog.html",
             "date": " • Feb 27, 2023"
         }
         
