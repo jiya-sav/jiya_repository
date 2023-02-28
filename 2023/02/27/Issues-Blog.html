@@ -1,0 +1,60 @@
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Issues Blog</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-02-27T00:00:00-06:00" itemprop="datePublished">
+        Feb 27, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
+
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>My first issue:</p>
+
+<p><img src="https://jiya-sav.github.io/jiya_repository/assets/img/2023-02-27-Issues-Blog/media/image2.png" alt="" /></p>
+
+<p>Other Error:</p>
+
+<p><img src="https://jiya-sav.github.io/jiya_repository/assets/img/2023-02-27-Issues-Blog/media/image3.png" alt="" /></p>
+
+<p>What help said (not under my control):<br />
+<img src="https://jiya-sav.github.io/jiya_repository/assets/img/2023-02-27-Issues-Blog/media/image1.png" alt="" /></p>
+
+<p>To fix the operational error, I tried many methods. I tried to follow the instructions on slack:</p>
+
+<ul>
+  <li>
+    <blockquote>
+      <p>Fix #1: fixing SQLAlchemy upgrade that changed syntax on how to perform db.create_all(); must be inside an with app.app_context():</p>
+    </blockquote>
+  </li>
+  <li>
+    <blockquote>
+      <p>Fix #2: default location for databases inside an instance folder; changing the impacted docker-compose.yml</p>
+    </blockquote>
+  </li>
+</ul>
+
+<p>Also, I tried removing the db.init_app(app) lines in each of our api files.</p>
+
+<p>Finally, I got it to work after recoding the entire api files for recipe.py, recipes.py, and main.py. The flask was running smoothly, and I was even able to connect it to postman:</p>
+
+<p><img src="https://jiya-sav.github.io/jiya_repository/assets/img/2023-02-27-Issues-Blog/media/image6.png" alt="" /></p>
+
+<p>Unfortunately, now the flask is not able to run, so I can’t connect it to my front end. However, it is an easy fix to fetch the api, and I even included a section for it in my current code:</p>
+
+<p><img src="https://jiya-sav.github.io/jiya_repository/assets/img/2023-02-27-Issues-Blog/media/image5.png" alt="" /></p>
+
+<p>My current error:</p>
+
+<p><img src="https://jiya-sav.github.io/jiya_repository/assets/img/2023-02-27-Issues-Blog/media/image4.png" alt="" /></p>
+
+  </div><a class="u-url" href="/jiya_repository/2023/02/27/Issues-Blog.html" hidden></a>
+</article>
