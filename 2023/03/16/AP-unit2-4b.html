@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      10 min read
+      11 min read
     
 </span></p>
 
@@ -309,18 +309,19 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>(1, 'Banana Bread', 'https://www.yummly.com/recipe/Banana-Chocolate-Bread-1877435', 'Breakfast', 'American')
+<pre>(1, 'Avocado Toast', 'link1', 'Breakfast', 'American')
 (2, 'Scrambled Eggs', 'link2', 'Breakfast', 'American')
 (3, 'Pancake', 'link3', 'Breakfast', 'American')
 (4, 'Mac and Cheese', 'link4', 'Lunch', 'American')
 (5, 'Panini Sandwich', 'link5', 'Lunch', 'French')
+(6, 'Salad', 'link6', 'Lunch', 'Mediterranean')
 (7, 'Minestrone Soup', 'link7', 'Dinner', 'Italian')
 (8, 'Lasagna', 'link8', 'Dinner', 'Italian')
 (9, 'Pasta', 'link9', 'Dinner', 'Italian')
 (10, 'Brownies', 'link10', 'Dessert', 'German')
 (11, 'Chocolate Chip Cookies', 'link11', 'Dessert', 'American')
 (12, 'Custard Pudding', 'link12', 'Dessert', 'German')
-(13, 'Paneer Tikka Masala', 'https://www.indianhealthyrecipes.com/paneer-tikka-masala-recipe-sanjeev-kapoor/', 'Dinner', 'Indian')
+(13, 'cake', 'cake.com', 'dessert', 'french')
 </pre>
 </div>
 </div>
@@ -402,7 +403,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>A new recipe record panini has been created
+<pre>A new recipe record bread has been created
 </pre>
 </div>
 </div>
@@ -423,10 +424,17 @@ window.onload = wrap_img;
 <p>Uses SQL UPDATE to modify password</p>
 <ul>
 <li>What does the hacked part do?</li>
-<li>Explain try/except, when would except occur?</li>
-<li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
 </ul>
 </blockquote>
+<p>The hacked part is meant to control for passwords that do not follow the requirements; they would be easy to hack.</p>
+<ul>
+<li>Explain try/except, when would except occur?</li>
+</ul>
+<p>this is how test data is passed to see if there are errors during code execution. This is a debugging method that includes a try block surrounding code that must be monitored. If there is an exception or runtime error, then the program execution goes to the exception block. This also catches bad or duplicated data. This mechanism gracefully exit out of a runtime error rather than crashing an entire application.</p>
+<ul>
+<li>What code seems to be repeated in each of these examples to point, why is it repeated?</li>
+</ul>
+<p>try/ except is repeated many times, which is important for gracefully exiting when there is an error; otherwise the entire application might crash or go in an endless loop.</p>
 
 </div>
 </div>
@@ -482,7 +490,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Error while executing the UPDATE: database is locked
+<pre>No uid bread was not found in the table
 </pre>
 </div>
 </div>
@@ -502,8 +510,10 @@ window.onload = wrap_img;
 <blockquote>
 <p>Uses a delete function to remove a user based on a user input of the id.</p>
 <ul>
-<li>Is DELETE a dangerous operation?  Why?</li>
-<li>In the print statemements, what is the "f" and what does {uid} do?</li>
+<li>Is DELETE a dangerous operation?  Why?
+Delete is a very dangerous operation, because it makes it easy to remove data permenantly.</li>
+<li>In the print statemements, what is the "f" and what does {uid} do?
+f is used to denote the beginning of a quotation and write the words to print.</li>
 </ul>
 </blockquote>
 
@@ -557,7 +567,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Error while executing the DELETE: database is locked
+<pre>No recipe Bread was not found in the table
 </pre>
 </div>
 </div>
@@ -581,6 +591,7 @@ window.onload = wrap_img;
 <li>Could you refactor this menu?  Make it work with a List?</li>
 </ul>
 </blockquote>
+<p>This menu makes it easier to play all the CRUDS commands. It repeats in order to perform each desired function.</p>
 
 </div>
 </div>
