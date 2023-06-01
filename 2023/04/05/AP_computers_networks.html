@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      6 min read
+      9 min read
     
 </span></p>
 
@@ -99,6 +99,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#parallel-and-distributed-computing">Parallel and Distributed Computing</a></li>
 </ul>
 </li>
+<li class="toc-entry toc-h2"><a href="#extra-notes">Extra notes</a></li>
 </ul><h2 id="requirements">
 <a class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
 <blockquote>
@@ -113,10 +114,10 @@ window.onload = wrap_img;
 
 <p>List specification of your Computer, or Computers if working as Pair/Trio</p>
 <ul>
-  <li>Processor GHz:</li>
-  <li>Memory in GB:</li>
-  <li>Storage in GB:</li>
-  <li>OS:</li>
+  <li>Processor GHz: 3.20GHz 2.50 GHz</li>
+  <li>Memory in GB: 16 GB</li>
+  <li>Storage in GB: 15.7 GB</li>
+  <li>OS: Windows</li>
 </ul>
 
 <p>Define or describe usage of Computer using Computer Programs. Pictures are preferred over a lot of text.  Use your experience.</p>
@@ -155,24 +156,34 @@ window.onload = wrap_img;
   </li>
   <li>Complete Vocabulary Matching Activity.  Incorporate this into your learnings from year.  To analyze measure path and latency use <code class="language-plaintext highlighter-rouge">traceroute</code> and <code class="language-plaintext highlighter-rouge">ping</code> commands from Linux Terminal.
     <ul>
-      <li>Path</li>
-      <li>Route</li>
-      <li>Computer System</li>
-      <li>Computer Device</li>
-      <li>Bandwidth</li>
-      <li>Computer Network</li>
+      <li>Path: location of file of interest; used in references and when sending/ recieving</li>
+      <li>Route: path that network takes to send and receive packets</li>
+      <li>Computer System: combo of computer hard/software that works together to accomplish technological tasks</li>
+      <li>Computer Device: hardware that is used to run networks and complete tasks; has a unique IP address</li>
+      <li>Bandwidth: max amount of data that can be sent over the internet at a time; can affect speed of network</li>
+      <li>Computer Network: many devices that work together to share data and transmit info</li>
     </ul>
   </li>
 </ul>
 
 <blockquote>
   <p>Watch/review College Board Daily Video 4.1.2</p>
+  <ul>
+    <li>Complete True of False Questions
+      <ol>
+        <li>T</li>
+        <li>F</li>
+        <li>F</li>
+        <li>T</li>
+        <li>F</li>
+        <li>F</li>
+        <li>T</li>
+      </ol>
+    </li>
+  </ul>
 </blockquote>
 
 <ul>
-  <li>
-    <p>Complete True of False Questions</p>
-  </li>
   <li>Essential Knowledge
     <ul>
       <li>The internet is a computer network consisting of interconnected networks that use standardized, open (nonproprierary) communication protocols.</li>
@@ -191,8 +202,11 @@ window.onload = wrap_img;
       <li>The world wide web uses the internet</li>
     </ul>
   </li>
-  <li>Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highligh vocabulary by illustration. The below illustration have some ideas</li>
+  <li>Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highligh vocabulary by illustration. The below illustration have some ideas
+The frontend is responsible for presenting the user interface and handling user interactions. It typically runs in the user’s web browser or on a mobile device. The frontend is focused on the presentation layer, displaying the user interface elements, handling user input, and making requests to the backend for data or other operations.</li>
 </ul>
+
+<p>The backend, on the other hand, is responsible for processing requests from the frontend, executing business logic, and managing data. It typically runs on a server or a cloud infrastructure. The backend handles tasks such as database interactions, authentication, authorization, business rules, and computations.</p>
 
 <p><img src="/jiya_repository/images/fullstack.png" alt="Full Stack"></p>
 
@@ -229,8 +243,21 @@ window.onload = wrap_img;
 </blockquote>
 
 <ul>
-  <li>Complete the network activity, summarize your understanding of fault tolerance.</li>
+  <li>Complete the network activity, summarize your understanding of fault tolerance.
+    <ol>
+      <li>Fault tolerant, because other paths can be utilized even if one fails and can’t connect.</li>
+      <li>Not fault tolerannt, since if one of the paths fails, then F is isolated and can’t connect to other.</li>
+      <li>Not fault tolerant since A and G have one path for connection.</li>
+    </ol>
+  </li>
 </ul>
+
+<ol>
+  <li>C</li>
+  <li>A</li>
+</ol>
+
+<p>Reflection: It is imperative to have fault tolerance in a network as extensive as the internet, because there is so much important information that is sent. There has to be many paths in order for there to be true fault tolerance, so that if one device or network does not convey information properly, there is a backup method that makes up for the failed path.</p>
 
 <h3 id="parallel-and-distributed-computing">
 <a class="anchor" href="#parallel-and-distributed-computing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Parallel and Distributed Computing</h3>
@@ -240,10 +267,15 @@ window.onload = wrap_img;
 
 <ul>
   <li>
-    <p>What is naturally Distributed in Frontend/Backend archeticture?</p>
+    <p>What is naturally Distributed in Frontend/Backend archeticture?<br>
+Distributed computing is when there is a distribution of tasks; client and server are focused on different things.
+The frontend is responsible for presenting the user interface and handling user interactions. It typically runs in the user’s web browser or on a mobile device. The frontend is focused on the presentation layer, displaying the user interface elements, handling user input, and making requests to the backend for data or other operations.
+The backend,  is responsible for processing requests from the frontend and managing data. It runs on a server or a cloud. The backend handles tasks such as database interactions, authentication, authorization, and computations.</p>
   </li>
   <li>
-    <p>Analyze this command in Docker: <code class="language-plaintext highlighter-rouge">ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"</code>.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an <a href="https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7">article</a></p>
+    <p>Analyze this command in Docker: <code class="language-plaintext highlighter-rouge">ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"</code>.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an <a href="https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7">article</a>
+–workers=1: specifies amount of worker processes Gunicorn will use; set to 1; parallel computing within the server is not being utilized, as there is only one worker process handling requests concurrently; no threads or forks
+–bind=0.0.0.0:8086: sets host and port that Gunicorn uses to establish connections</p>
   </li>
 </ul>
 
@@ -270,8 +302,8 @@ window.onload = wrap_img;
 <span class="c1"># create a remote function that squares a list of numbers in parallel
 </span><span class="o">@</span><span class="n">ray</span><span class="p">.</span><span class="n">remote</span>
 <span class="k">def</span> <span class="nf">square_list</span><span class="p">(</span><span class="n">nums</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">[</span><span class="n">square</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">]</span>
-
+    <span class="k">return</span> <span class="p">[</span><span class="n">square</span><span class="p">(</span><span class="n">num</span><span class="p">)</span> <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">]</span> <span class="c1"># list comprehension (makes squares of numbers)
+</span>
 <span class="c1"># define a list of numbers to square
 </span><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
 
@@ -290,6 +322,19 @@ window.onload = wrap_img;
 </span><span class="k">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
 
 </code></pre></div></div>
+<h2 id="extra-notes">
+<a class="anchor" href="#extra-notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Extra notes</h2>
+<ul>
+  <li>do 4.1-4.2 T/F questions</li>
+  <li>have pics/ diagrams to use vocab</li>
+  <li>internet routers are not fault-tolerant; have single point of failure</li>
+  <li>distributed computing: there is a distribution of tasks; client and server are focused on different things</li>
+  <li>see how many workers are in gunicorn</li>
+</ul>
+
+<p>Diagrams I made:
+<img src="/jiya_repository/images1/CN1.png" alt="Computer Hardware">
+<img src="/jiya_repository/images1/CN2.png" alt="Networks"></p>
 
   </div><!-- from https://github.com/utterance/utterances -->
 <script src="https://utteranc.es/client.js"
