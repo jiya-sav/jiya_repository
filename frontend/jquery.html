@@ -113,18 +113,26 @@ window.onload = wrap_img;
 <script>
   //  insertion sort function in JS converted from my past python version
   function insertionSort(list) {
-    var n = list.length;
-    for (var i = 1; i < n; i++) {
-      var key = list[i];
-      var j = i - 1;
-      while (j >= 0 && list[j][0] > key[0]) {
-        list[j + 1] = list[j];
-        j = j - 1;
-      }
-      list[j + 1] = key;
+  var n = list.length;
+  for (var i = 1; i < n; i++) {
+    var key = list[i];
+    var j = i - 1;
+    while (j >= 0 && compareValues(list[j][0], key[0]) > 0) {
+      list[j + 1] = list[j];
+      j = j - 1;
     }
-    return list;
+    list[j + 1] = key;
   }
+  return list;
+}
+
+// this function's purpose is to compare string values; otherwise they just show up as numbers when insertion sort is run
+function compareValues(a, b) { 
+  if (typeof a === 'string' && typeof b === 'string') {
+    return a.localeCompare(b, 'en', { numeric: true });
+  }
+  return a - b;
+}
 
 
 
