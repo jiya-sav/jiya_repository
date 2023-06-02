@@ -20,7 +20,7 @@ tags: [javascript]
           width: 150px;
         }
     </style>
-
+    <button id="insertionSortBtn" class="btn btn-primary">Sort</button>
 </head>
 
 <table id="flaskTable" class="table table-striped nowrap" style="width:100%">
@@ -47,17 +47,34 @@ tags: [javascript]
 </table>
 
 <script>
+  //  insertion sort function in JS converted from my past python version
+  function insertionSort(list) {
+    var n = list.length;
+    for (var i = 1; i < n; i++) {
+      var key = list[i];
+      var j = i - 1;
+      while (j >= 0 && list[j] > key) {
+        var temp = list[j + 1];
+        list[j + 1] = list[j];
+        list[j] = temp;
+        j = j - 1;
+      }
+    }
+    return list;
+  }
+
+
   $(document).ready(function() {
     fetch('https://playourshiny.duckdns.org/songdatabase', { mode: 'cors' })
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('API response failed');
-      }
-      return response.json();
-    })
-    .then(data => {
-      for (const row of data) {
-        $('#flaskBody').append('<tr><td>' + 
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('API response failed');
+        }
+        return response.json();
+      })
+      .then(data => {
+        for (const row of data) {
+          $('#flaskBody').append('<tr><td>' +
             row.acousticness + '</td><td>' +
             row.artist + '</td><td>' +
             row.bpm + '</td><td>' +
@@ -73,13 +90,38 @@ tags: [javascript]
             row.top_genre + '</td><td>' +
             row.valence + '</td><td>' +
             row.year + '</td></tr>');
-      }
-      $('#flaskTable').DataTable();
-    })
-    .catch(error => {
-      console.error('Error:', error);
-    })
+        }
+
+        // Insertion sort function for table
+        $('#insertionSortBtn').on('click', function() {
+          // Retrieve table data
+          var table = $('#flaskTable').DataTable();
+          var tableData = table
+            .columns()
+            .data()
+            .toArray();
+
+          // Convert table data to a flat array
+          var flatData = tableData.reduce(function(acc, val) {
+            return acc.concat(val);
+          }, []);
+
+          // Perform insertion sort on the flat data array
+          var sortedData = insertionSort(flatData);
+
+          // Update table with sorted data
+          var sortedTableData = [];
+          var numColumns = tableData.length;
+          for (var i = 0; i < sortedData.length; i += numColumns) {
+            sortedTableData.push(sortedData.slice(i, i + numColumns));
+          }
+          table.clear().rows.add(sortedTableData).draw();
+        });
+
+        $('#flaskTable').DataTable();
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
   });
 </script>
-
-
