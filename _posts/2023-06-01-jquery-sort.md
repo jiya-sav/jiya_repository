@@ -72,13 +72,13 @@ tags: [javascript]
             row.title + '</td><td>' +
             row.top_genre + '</td><td>' +
             row.valence + '</td><td>' +
-            row.year + '</td><tr>');
+            row.year + '</td></tr>');
       }
-      $("#flaskTable").DataTable();
+      $('#flaskTable').DataTable();
     })
     .catch(error => {
       console.error('Error:', error);
-    });
+    })
   });
 </script>
 
