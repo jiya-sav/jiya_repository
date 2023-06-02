@@ -53,15 +53,15 @@ tags: [javascript]
     for (var i = 1; i < n; i++) {
       var key = list[i];
       var j = i - 1;
-      while (j >= 0 && list[j] > key) {
-        var temp = list[j + 1];
+      while (j >= 0 && list[j][0] > key[0]) {
         list[j + 1] = list[j];
-        list[j] = temp;
         j = j - 1;
       }
+      list[j + 1] = key;
     }
     return list;
   }
+
 
 
   $(document).ready(function() {
